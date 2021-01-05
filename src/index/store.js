@@ -17,7 +17,7 @@ export default createStore(
     cityData: null, // 城市列表
     isLoadingCityData: false, // 是否正在加载城市数据
     isDateSelectorVisible: false, // 日期选择浮层
-    // departDate: new Date(),
+    departDate: Date.now(),
     highSpeed: false // 是否只看高铁动车
   },
   applyMiddleware(thunk)
