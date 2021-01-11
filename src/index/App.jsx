@@ -74,7 +74,7 @@ function App(props) {
     return bindActionCreators({
       toggle: toggleHighSpeed
     }, dispatch)
-  }, [])
+  }, [dispatch])
 
   const onSelectDate = useCallback((day) => {
     console.log(day)
@@ -84,7 +84,7 @@ function App(props) {
     dispatch(setDepartDate(day))
     dispatch(hideDateSelector())
 
-  }, [])
+  }, [dispatch])
 
   return (
     <div>

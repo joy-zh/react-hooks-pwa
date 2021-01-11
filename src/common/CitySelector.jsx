@@ -208,7 +208,7 @@ const CitySelector = memo(function CitySelector(props) {
       return
     }
     fetchCityData()
-  }, [show, cityData, isLoading])
+  }, [show, cityData, isLoading, fetchCityData])
 
   // 点击字母跳转到对应列表
   const toAlpha = useCallback(alpha => {
