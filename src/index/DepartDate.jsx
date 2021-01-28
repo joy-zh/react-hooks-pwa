@@ -18,7 +18,7 @@ export default function DepartDate(props) {
 
   const departDateString = useMemo(() => {
     return dayjs(time).format('YYYY-MM-DD')
-  }, [h0OfDepart])
+  }, [time])
 
   const isToday = h0OfDepart === h0()
 
